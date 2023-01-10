@@ -1,0 +1,76 @@
+*{
+    Margin:0:
+    Padding: 0;
+    Box-size: border-box;
+}
+    
+Img{
+    Max-width: 100%;
+    }
+
+a {
+ text-decoration: none; 
+color: inherit;
+}
+
+ul,
+ol,
+menu,
+li{
+list-style-type: none;
+}
+
+::root{
+    --blu:#0084FD;
+    --lightblue:#B5DDFF;
+    --yellow:
+}
+
+.no-dec{
+    list-style-type: none;
+}
+
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.row{
+display: flex;
+flex-wrap: wrap;
+}
+
+.header-nav{
+
+}
+
+.justify-content{
+    justify-content: space-between;
+}
+
+.header-nav{
+
+}
+
+.main-header{
+    background-color: blue;
+}
+
+.nav-item{
+   line-height: 18px;
+   color:white;
+   font-size:large;
+   padding: 0 16px;
+
+}
+
+/*+++++++/
+/*button/*
+***********
+
+
+
+
+
+
+
