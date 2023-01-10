@@ -20,15 +20,12 @@ li{
 list-style-type: none;
 }
 
-::root{
-    --blu:#0084FD;
+:root{
+    --blue: #0084FD;
     --lightblue:#B5DDFF;
     --yellow:
 }
 
-.no-dec{
-    list-style-type: none;
-}
 
 .container{
     max-width: 1140px;
@@ -39,13 +36,109 @@ list-style-type: none;
 display: flex;
 flex-wrap: wrap;
 }
+.row-2{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* **************** */
+/* COLONNE *****/
+/* **************** */
+
+.col-3{
+    flex-basis: calc(100% / 3);
+}
+
+.col-2{
+    flex-basis: calc(100%* 2/3);
+}
+
+.col_50{
+    flex-basis: 50%;
+}
+
+.col1{
+    flex-basis:100%;
+}
+
+
+
+/* **************** */
+/* BOTTONI *****/
+/* **************** */
+
+
+.btn{
+    border-radius: 20px;
+    padding: 8px !important;
+    font-size: 13px;
+    line-height: 3px !important;
+}
+.btn, .btn-w{
+    background-color: white;
+    color: black;
+}
+
+.btn-blue{
+    background-color: #0084FD;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    max-width: 150px;
+}
+
+.icon-hero{
+  font-size: 100px;
+  color: #0084FD;
+  text-align: center;
+}
+     
+
+
+
+/* **************** */
+/* TITOLI *****/
+/* **************** */
+
+.title-blu{
+    color:blue;
+    font-size: 30px;
+}
+
+
+/* **************** */
+/* TESTI *****/
+/* **************** */
+
+.text-white{
+    color:white;
+}
+
+
+.text-descp-giust{
+    font-size: 18px;
+}
+
+.tx_cent{
+    text-align: center;
+}
+
+
+/* **************** */
+/* HEADER *****/
+/* **************** */
+
 
 .header-nav{
 
 }
 
-.justify-content{
+.justify-cnt{
     justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    color: white;
 }
 
 .header-nav{
@@ -58,15 +151,88 @@ flex-wrap: wrap;
 
 .nav-item{
    line-height: 18px;
-   color:white;
-   font-size:large;
    padding: 0 16px;
 
 }
 
-/*+++++++/
-/*button/*
-***********
+
+.icon-hamburger{
+font-size: 25px;
+}
+
+/* MEDIA QUERY HERO */
+
+.icon-hamburger{
+    display: none;
+}
+
+@media screen and (max-width: 575px ){
+  .header-nav {
+        display: none;
+    }
+
+   .icon-hamburger{
+    display: block;
+   } 
+
+}
+
+
+
+
+/* **************** */
+/* SEZIONE HERO *****/
+/* **************** */
+
+.card_hero{
+    background-color: red;
+    border: 2px solid yellow;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+
+
+.card{
+    background-color: #B5DDFF;
+    padding: 20px;
+    border: 1px solid yellow;
+    border-radius: 10px;
+    min-height: 100px;
+}
+
+
+
+.img_hero1{
+    margin-bottom: -40px;
+}
+
+.
+
+/* **************** */
+/* SEZIONE HERO MEDIA QUERY *****/
+/* **************** */
+
+@media screen and (max-width: 576px) {
+    .col-2{
+        flex-basis: 100%;
+    }
+
+    .col-3{
+        flex-basis: 100%;
+    }
+    
+}
+
+/* @media screen and (max-width: 576px) {
+    .col-2{
+        flex-basis: 100%;
+    }
+
+    .col-3{
+        flex-basis: 100%;
+    }
+  } */
 
 
 
